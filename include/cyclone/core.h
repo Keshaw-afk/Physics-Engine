@@ -25,6 +25,13 @@ namespace cyclone {
             z = -z;
         }
 
+        void clear()
+        {
+            x = 0;
+            y = 0;
+            z = 0;
+        }
+
         real magnitude() const
         {
             return real_sqrt(x*x + y*y + z*z);

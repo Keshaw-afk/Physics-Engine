@@ -20,19 +20,31 @@ namespace cyclone
         
         protected:
         real inverseMass;
+        real mass;
 
         public:
-        void setInverseMass(const real inverseMass)
-        {
-            this->inverseMass = inverseMass;
-        }
+        void setInverseMass(const real inverseMass);
 
-        void setMass(const real mass)
-        {
-            this->inverseMass = ((real)1) / mass;
-        }
+        void setMass(const real mass);
+
+        real getMass() const;
+
+        real getInverseMass() const;
+
+        bool hasFiniteMass() const;
+
+        Vector3 getVelocity() const;
+
+        void getVelocity(Vector3* velocity) const;
+
 
         void integrate(real duration);
+
+        Vector3 forceAccum; //Stores force
+
+        void clearAccumulator(); //Zeroes all the forces
+
+        void addForce(const Vector3& force);
      
     };
 
