@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/graduate/Development/hobby/EXPMENT_PHYSICS_ENGINE/build",
+  "command": "/usr/bin/c++  -I/home/graduate/Development/hobby/EXPMENT_PHYSICS_ENGINE/include -std=gnu++17 -o CMakeFiles/cyclone.dir/physics/src/particle.cpp.o -c /home/graduate/Development/hobby/EXPMENT_PHYSICS_ENGINE/physics/src/particle.cpp",
+  "file": "/home/graduate/Development/hobby/EXPMENT_PHYSICS_ENGINE/physics/src/particle.cpp",
+  "output": "CMakeFiles/cyclone.dir/physics/src/particle.cpp.o"
+}
+]

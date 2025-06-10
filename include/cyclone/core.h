@@ -110,6 +110,25 @@ namespace cyclone {
             return x*v.x + y*v.y + z*v.z;
         }
 
+        Vector3 vectorProduct(const Vector3& v) const 
+        {
+            return Vector3(y*v.z - z*v.y, 
+                           z*v.x - x*v.z,
+                           x*v.y - y*v.x);
+        }
+
+        void operator%=(const Vector3& v)
+        {
+            *this = vectorProduct(v);
+        }
+
+        Vector3 operator%(const Vector3& v) const
+        {
+            return Vector3(y*v.z - z*v.y, 
+                           z*v.x - x*v.z,
+                           x*v.y - y*v.x);
+        }
+
 
     };
     
