@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcyclone.a CMakeFiles/cyclone.dir/physics/src/particle.cpp.o
-/usr/bin/ranlib libcyclone.a
